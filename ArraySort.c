@@ -2,7 +2,7 @@
  * 
  * ArraySort.c
  * 
- * Created by Jean-Philippe Legault
+ * Created by Jean-Philippe Legault, Mitchell Rogers, Olivia Wells
  * 
  * Your task is to implement in place sorting using the two available functions
  * swapAdjacent, and compareAdjacent.
@@ -71,8 +71,6 @@ int main(void)
     int a[array_size];
 	int temp;
 	
-	printf("Please enter %d integers.\n", array_size);
-	
 	for(int i = 0; i < array_size; i++){
 		if(!scanf("%d", &temp)){
 			printf("That is not a valid integer.");
@@ -81,12 +79,12 @@ int main(void)
 		a[i] = temp;
 	}
 
-    printf("=== Array before Sorting = ");
+    //printf("=== Array before Sorting = ");
     printArray(a, array_size);
 
     inPlaceSort(a, array_size);
 
-    printf("=== Array after Sorting = ");
+    //printf("=== Array after Sorting = ");
     printArray(a, array_size);
 
 }
